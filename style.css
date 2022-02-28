@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, header, .banner-buttons, a {
+  font-family: 'Arvo', serif;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body, footer, .submit {
+  font-family: 'Roboto', sans-serif;
+}
+
+/***************Header Styling***********************************************/
+header {
+  background-color: #759B1C;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0 0 0;
+  width: 100%;
+}
+
+nav {
+  display: none;
+}
+/**************************************************************************/
+
+/***************hamburger menu*****************/
+.hamburger-menu {
+  overflow: hidden;
+  background-color: #759B1C;
+  position: relative;
+}
+
+.hamburger-menu #hamburger-menu-links {
+  display: none;
+}
+
+.hamburger-menu .active {
+  background-color: #759B1C;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.25em;
+  
+}
+
+.hamburger-menu a {
+  color: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  text-align: left;
+}
+
+.hamburger-menu a.icon {
+  background: #759B1C;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+}
+/**************************************************************************/
+
+/****************Main Styling*********************************************/
+main h2 {
+  text-align: center;
+}
+
+.index-main .banner-container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 2em auto;
+  background-image: url("images/fresh_salsa_1920w_banner.jpg");
+  background-color: #ffffff; 
+  height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-main .banner-text {
+  text-align: center;
+  color: white;
+  font-size: 1.25em;
+}
+
+.index-main .banner-buttons a {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1E3888;
+  color: #ffffff;
+  display: block;
+  width: 85%;
+  padding: .5em 0;
+  margin: 1em auto;
+  border: none;
+  border-radius: 1.5em;
+}
+
+.index-main .banner-buttons a:hover, .index-main .banner-buttons a:focus, .index-main .banner-buttons a:active {
+  text-decoration: underline;
+}
+
+.menu-wrapper {
+  margin: 1em auto;
+}
+
+.menu-main .banner-container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 2em auto;
+  background-image: url("images/tacos_al_pastor_1920w.jpg");
+  background-color: #ffffff; 
+  height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-main .banner-text {
+  text-align: center;
+  color: white;
+  font-size: 1.25em;
+}
+
+.menu-main .banner-buttons a {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1E3888;
+  color: #ffffff;
+  display: block;
+  width: 85%;
+  padding: .5em 0;
+  margin: 1em auto;
+  border: none;
+  border-radius: 1.5em;
+}
+
+.menu-main .banner-buttons a:hover, .menu-main .banner-buttons a:focus, .menu-main .banner-buttons a:active {
+  text-decoration: underline;
+}
+
+.menu-main h2, .ingredients-main h2, .tortillas-main h2, .vegetables-main h2, .meats-main h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.menu-section {
+  padding: 1em 1em;
+}
+
+.menu-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  padding-bottom: .5em;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  font-size: 1.25em;
+  margin: .25em;
+  padding-bottom: .5em;
+}
+
+.about-main section {
+  margin-top: 1em;
+}
+
+.our-team {
+  padding: 1em;
+}
+
+.our-team h2 {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.our-team div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ingredients-heading {
+  padding: 1em 0;
+}
+
+.contact-main .banner-container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 2em auto;
+  background-image: url("images/contact_banner_1920w.jpg");
+  background-color: #ffffff; 
+  height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-main section h2 {
+  padding: 1em;
+}
+
+.contact-info div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em 1em;
+}
+
+form div {
+  margin: .5em 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form div label {
+  width: 25%;
+  font-size: 1.25em;
+}
+
+form div input {
+  width: 75%;
+}
+
+.submit {
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1E3888;
+  color: #ffffff;
+  display: block;
+  padding: .5em 0;
+  margin: 1em auto;
+  border: none;
+  border-radius: 1.5em;
+}
+
+.submit:hover, .submit:focus, .submit:active {
+  text-decoration: underline;
+}
+
+.ingredient-detail-img {
+  text-align: center;
+}
+
+.ingredient-detail img {
+  padding: 1em;
+
+}
+
+.ingredient-detail h2 {
+  padding-top: 1em;
+}
+
+.ingredient-detail p {
+  padding: 1em;
+}
+
+.return-btn a {
+  font-size: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1E3888;
+  color: #ffffff;
+  display: block;
+  width: 85%;
+  padding: .5em 0;
+  margin: 1em auto;
+  border-radius: 1.5em;
+  border: none;
+}
+
+.return-btn a:hover, .return-btn a:focus, .return-btn a:active {
+  text-decoration: underline;
+}
+/**************************************************************************/
+
+/****************Card Styling*********************************************/
+.index-card {
+  background-color: #ffffff;
+  margin: 2em auto;
+  max-width: 85%;
+  padding: 1em;
+}
+
+.index-card div {
+  margin: 1em 0 1em 0;
+}
+
+.index-card-content {
+  margin: 0 auto;
+  font-size: 1.25em;
+  padding-top: 1em;
+}
+
+.index-card-content h2 {
+  padding-bottom: 1em;
+}
+
+.ingredients-card {
+  background-color: #ffffff;
+  margin: 2em auto;
+  max-width: 85%;
+  padding: 1em;
+}
+
+.ingredients-card-content {
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.ingredients-card-content h2 {
+  font-size: 1.75em;
+  padding-bottom: .5em;
+}
+
+.ingredients-card-description {
+  font-size: 1.25em;
+  padding-bottom: 1em;
+}
+
+.ingredients-card-button a {
+  font-size: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1E3888;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: .5em 0;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  border: none;
+}
+
+.ingredients-card-button a:hover, .ingredients-card-button a:active, .ingredients-card-button a:focus {
+  text-decoration: underline;
+}
+
+/****************************************************************************/
+
+
+/****************Footer Styling*********************************************/
+footer {
+  background-color: #759B1C;
+  text-align: center;
+  padding: 1em 1em;
+  width: 100%;
+}
+
+.social-icons {
+  padding-top: 1em;
+}
+
+.social-icons img {
+  display: inline-block;
+  width: 75px;
+  padding: 0 .75em;
+}
+
+.social-attribute {
+  color: #ffffff;
+  padding-top: 1em;
+  font-size: .75em;
+}
+
+.social-attribute a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/**************************************************************************/
+
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 700px) {
+    .hamburger-menu {
+      display: none;
+    }    
+  
+    /***************Main Nav Styling*******************************************/
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #759B1C;
+    }
+    
+    nav li {
+      float: left;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    
+    nav li a {
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: .5em;
+      text-decoration: none;
+    }
+
+    nav li a:hover, .main-active {
+      text-decoration: underline;
+    }
+    /**************************************************************************/
+
+    /**************************Card Tablet******************************/
+    .index-card-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .ingredients-card-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    /**************************************************************************/
+
+    /*************************Main Styling - Tablet****************************/
+    .menu-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-main .banner-buttons a, .index-main .banner-buttons a {
+      width: 35%;
+    }
+
+    .about-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .section-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2em;
+    }
+
+    form {
+      margin: 0 2em;
+    }
+
+    .ingredient-detail p {
+      font-size: 1.5em;
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    .ingredients-column {
+      display: flex;
+    }
+
+    .return-btn a {
+      width: 35%;
+    }
+    /**************************************************************************/
+
+    /**********************Footer Styling - Tablet****************************/
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /**************************************************************************/
+  }
+
+  @media screen and (min-width: 800px) {
+    nav li {
+      font-size: 1.25em;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .ingredients-card-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav li {
+      font-size: 1.5em;
+    }
+  }
+}

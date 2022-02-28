@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Home | Toro Taco</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/component1.jpg">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </picture>
+
+    <!--Main Navigation Menu - hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a class="main-active" href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu - hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Home - Toro Taco">Toro Taco</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="index-main">
+    <div class="banner-container">
+      <div class="banner-text">
+        <h1>Come Eat with us Today!</h1>
+      </div>
+      <div class="banner-buttons">
+        <a class="btn" href="menu.html" title="Menu - Toro Taco">Menu</a>
+        <a class="btn" href="contact.html" title="Contact - Toro Taco">Contact</a>
+      </div>
+    </div>
+
+    <div class="index-card-wrapper">
+      <article class="index-card">
+        <div class="index-card-media">
+          <img srcset="images/xs_fresh_tortillas_320w.jpg 320w,
+             images/small_fresh_tortillas_640w.jpg 640w,
+             images/medium_fresh_tortillas_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/fresh_tortillas_1280w.jpg"
+            alt="handmade, fresh corn tortillas"
+          >
+        </div>
+        <div class="index-card-content">
+          <h2>Hand-Made Tortillas</h2>
+          <p class="index-card-description">
+            Our tortillas are the best in town! We make a fresh batch of them every morning with the best ingredients sourced directly from Mexico. We serve corn tortillas primarily but, make a portion on wheat tortillas for those who prefer them.  
+          </p>
+        </div>
+      </article>
+
+      <article class="index-card">
+        <div class="index-card-media">
+          <img srcset="images/xs_authentic_menu_320w.jpg 320w,
+             images/small_authentic_menu_640w.jpg 640w,
+             images/medium_authentic_menu_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/authentic_menu_1280w.jpg"
+            alt="handmade, fresh burritos"
+          >
+        </div>
+        <div class="index-card-content">
+          <h2>Authentic Menu</h2>
+          <p class="index-card-description">
+            We have worked hard to bring our customers a menu of authentic dishes. Our menu isn't as large or varied as your typical Tex-Mex restaurant but, we specialize in meat, salsa, and tortilla recipes that have been passed down through the generations to give you a real taste of Mexico.
+          </p>
+        </div>
+      </article>
+
+      <article class="index-card">
+        <div class="index-card-media">
+          <img srcset="images/xs_outdoor_patio_320w.jpg 320w,
+             images/small_outdoor_patio_640w.jpg 640w,
+             images/medium_outdoor_patio_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/outdoor_patio_1280w.jpg"
+            alt="Our outdoor patio and seating area"
+          >
+        </div>
+        <div class="index-card-content">
+          <h2>Outdoor Patio</h2>
+          <p class="index-card-description">
+            Our beautiful outdoor patio is first-come, first-serve seating. We have dedicated wait-staff for this area so you don't have to worry about being forgotten about. Enjoy the same delicious menu and bar selections out here on those nice North Carolina days.
+          </p>
+        </div>
+      </article>
+
+      <article class="index-card">
+        <div class="index-card-media">
+          <img srcset="images/xs_bar_selection_320w.jpg 320w,
+             images/small_bar_selection_640w.jpg 640w,
+             images/medium_bar_selection_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/bar_selection_1280w.jpg"
+            alt="Selection of Drinks at our premium bar"
+          >
+        </div>
+        <div class="index-card-content">
+          <h2>Premium Bar Selection</h2>
+          <p class="index-card-description">
+            Our bar carries a wide variety of different alcoholic (and non-alcoholic) beverages. We offer a large selection of tequilas, mezcals, and Mexican lagers as well as plenty of domestic beers and liquors.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </div>
+
+      <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" title="Toro Taco - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" title="Toro Taco - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" title="Toro Taco - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div> 
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

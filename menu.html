@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Menu | Toro Taco</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/component1.jpg">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </picture>
+
+    <!--Main Navigation Menu - hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a class="main-active" href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu - hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Home - Toro Taco">Toro Taco</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="menu-main">
+    <div class="banner-container">
+      <div class="banner-text">
+        <h1>Come Eat with us Today!</h1>
+      </div>
+      <div class="banner-buttons">
+        <a class="btn" href="tel:+19199999999" title="Call Us - Toro Taco">Order Pick-Up</a>
+        <a class="btn" href="https://www.ubereats.com/" target="_blank" title="Deliver - UberEats">Order Delivery</a>
+      </div>
+    </div>
+
+    <h2>Menu</h2>
+    <div class="menu-wrapper">
+      <div class="menu-section">
+        <div class="menu-heading">
+          <h3>Tacos</h3>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Asada (Steak)</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Tinga (Shredded Chicken)</p>
+          </div>
+          <div class="menu-price">
+            <p>$0.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Al Pastor (Marinated Pork)</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.55</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Carnitas (Pulled Pork)</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.75</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Chorizo (Mexican Sausage)</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.75</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Suadero (Brisket)</p>
+          </div>
+          <div class="menu-price">
+            <p>$2.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-heading">
+          <h3>Burritos</h3>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Asada (Steak)</p>
+          </div>
+          <div class="menu-price">
+            <p>$5.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Tinga (Shredded Chicken)</p>
+          </div>
+          <div class="menu-price">
+            <p>$4.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Al Pastor (Marinated Pork)</p>
+          </div>
+          <div class="menu-price">
+            <p>$5.55</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Carnitas (Pulled Pork)</p>
+          </div>
+          <div class="menu-price">
+            <p>$5.75</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Chorizo (Mexican Sausage)</p>
+          </div>
+          <div class="menu-price">
+            <p>$5.75</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Suadero (Brisket)</p>
+          </div>
+          <div class="menu-price">
+            <p>$6.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-heading">
+          <h3>Salsas</h3>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Pico de Gallo</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Salsa Verde</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Salsa Roja Picante (Hot!)</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Guacamole</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.75</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Salsa Ranchera</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Cheese Dip</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-heading">
+          <h3>Beverages</h3>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Aguas Frescas</p>
+          </div>
+          <div class="menu-price">
+            <p>$0.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Coca-Cola Products</p>
+          </div>
+          <div class="menu-price">
+            <p>$1.25</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Beer (Domestic)</p>
+          </div>
+          <div class="menu-price">
+            <p>$3.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Beer (Imported)</p>
+          </div>
+          <div class="menu-price">
+            <p>$4.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Tequila & Mezcal</p>
+          </div>
+          <div class="menu-price">
+            <p>Prices Vary</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-desc">
+            <p>Rum</p>
+          </div>
+          <div class="menu-price">
+            <p>Prices Vary</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" title="Toro Taco - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" title="Toro Taco - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" title="Toro Taco - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div> 
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

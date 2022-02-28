@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Vegetables | Toro Taco</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/component1.jpg">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </picture>
+
+    <!--Main Navigation Menu - hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a class="main-active" href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu - hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Home - Toro Taco">Toro Taco</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="vegetables-main">
+    <section class="ingredient-detail">
+      <h2>Our Vegetables</h2>
+      <div class="ingredients-column">
+        <div class="ingredient-detail-img">
+          <img src="images/vegetable_farm_500w.jpg" alt="local vegetable farm at sunset">
+        </div>
+        <p>
+          We source all of our vegetables from local farmers in North Carolina. We have partnered with several farms that specialize in vegetable farming rather than row crops to make sure ingredients like our tomatoes, onions, and potatoes are delicious, healthy, and stimulate the local economy.
+        </p>
+      </div>
+      <div class="ingredients-column">
+        <div class="ingredient-detail-img">
+          <img src="images/local_farmer_500w.jpg" alt="local farmer planting vegetables">
+        </div>
+        <p>
+          All vegetables are grown organically without the use of pesticides or herbicides. The farmers are skilled in no-till farming and natural techniques to help ward off insects, weed, and disease. This allows us to provide a product untainted by chemicals.
+        </p>
+      </div>
+      <div class="ingredients-column">
+        <div class="ingredient-detail-img">
+          <img src="images/local_onions_500w.jpg" alt="bounty of local onions">
+        </div>
+        <p>
+          We visit each local farm several times throughout the year to verify the quality and quantity of product. This allows us to guarantee a fresh, steady supply of local vegetables year-round.
+        </p>
+      </div>
+    </section>
+
+    <div class="return-btn">
+      <a class="btn" href="ingredients.html" title="Ingredients - Toro Taco">Back to Ingredients</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" title="Toro Taco - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" title="Toro Taco - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" title="Toro Taco - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div> 
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

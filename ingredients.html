@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Ingredients | Toro Taco</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/component1.jpg">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </picture>
+
+    <!--Main Navigation Menu - hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a class="main-active" href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu - hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Home - Toro Taco">Toro Taco</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="ingredients-main">
+    <h2 class="ingredients-heading">Our Ingredients</h2>
+    <div class="ingredients-card-wrapper">
+      <article class="ingredients-card">
+        <div class="ingredients-card-media">
+          <img srcset="images/xs_fresh_tortillas_320w.jpg 320w,
+             images/small_fresh_tortillas_640w.jpg 640w,
+             images/medium_fresh_tortillas_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/fresh_tortillas_1280w.jpg"
+            alt="handmade, fresh corn tortillas"
+          >
+        </div>
+        <div class="ingredients-card-content">
+          <h2>Tortillas</h2>
+          <p class="ingredients-card-description">
+            We source our tortilla ingredients directly from corn farmers in Mexico to offer you a wide variety of authentic corn tortillas.
+          </p>
+        </div>
+        <div class="ingredients-card-button">
+          <a class="btn" href="tortillas.html" title="Tortillas - Toro Taco">Read More</a>
+        </div>
+      </article>
+
+      <article class="ingredients-card">
+        <div class="ingredients-card-media">
+          <img srcset="images/xs_fresh_vegetables_320w.jpg 320w,
+             images/small_fresh_vegetables_640w.jpg 640w,
+             images/medium_fresh_vegetables_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/fresh_vegetables_1280w.jpg"
+            alt="basket of fresh vegetables"
+          >
+        </div>
+        <div class="ingredients-card-content">
+          <h2>Vegetables</h2>
+          <p class="ingredients-card-description">
+            We have partnered with several local farms to make sure that we are serving you with the freshest vegetables around.
+          </p>
+        </div>
+        <div class="ingredients-card-button">
+          <a class="btn" href="vegetables.html" title="Vegetables - Toro Taco">Read More</a>
+        </div>
+      </article>
+
+      <article class="ingredients-card">
+        <div class="ingredients-card-media">
+          <img srcset="images/xs_fresh_cheese_320w.jpg 320w,
+             images/small_fresh_cheese_640w.jpg 640w,
+             images/medium_fresh_cheese_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/fresh_cheese_1280w.jpg"
+            alt="plate of artisan cheese"
+          >
+        </div>
+        <div class="ingredients-card-content">
+          <h2>Meat & Cheese</h2>
+          <p class="ingredients-card-description">
+            We have partnered with several local farms to serve you with the freshest meats and cheeses around.
+          </p>
+        </div>
+        <div class="ingredients-card-button">
+          <a class="btn" href="meats.html" title="Meats - Toro Taco">Read More</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" title="Toro Taco - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" title="Toro Taco - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" title="Toro Taco - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div> 
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Contact | Toro Taco</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/component1.jpg">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </picture>
+
+    <!--Main Navigation Menu - hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a class="main-active" href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu - hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Home - Toro Taco">Toro Taco</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <div class="banner-container">
+      
+    </div>
+
+    <div class="section-wrapper">
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/123+W+Main+St,+Durham,+NC+27701/@35.9953897,-78.9038936,17z/data=!3m1!4b1!4m5!3m4!1s0x89ace46dec6e19c5:0x7c58139fb8e4aaf6!8m2!3d35.9953897!4d-78.9017049" target="_blank" title="Google Maps - Toro Taco">123 Main St. Durham, NC 27701</a>
+        </div>
+        <div>
+          <i class="fas fa-phone"></i>
+          <a href="tel:+19199999999" title="Call Us Today - Toro Taco">919-999-9999</a>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:support@torotaco.com" title="Email Us Today - Toro Taco">support@torotaco.com</a>
+        </div>   
+      </section>
+      <section class="rewards-program">
+        <h2>Sign-Up For Our Rewards Program</h2>
+        <form action="#">
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div>
+            <input class="submit" type="submit">
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" title="Toro Taco - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" title="Toro Taco - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" title="Toro Taco - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div> 
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

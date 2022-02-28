@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+
+  <title>About | Toro Taco</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/component1.jpg">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </picture>
+
+    <!--Main Navigation Menu - hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a class="main-active" href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu - hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Home - Toro Taco">Toro Taco</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Home - Toro Taco">Home</a></li>
+        <li><a href="menu.html" title="Menu - Toro Taco">Menu</a></li>
+        <li><a href="about.html" title="About - Toro Taco">About Us</a></li>
+        <li><a href="ingredients.html" title="Ingredients - Toro Taco">Ingredients</a></li>
+        <li><a href="contact.html" title="Contact - Toro Taco">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="about-main">
+    <section class="our-team">
+      <div>
+        <img srcset="images/xs_our_team_320w.jpg 320w,
+             images/small_our_team_640w.jpg 640w,
+             images/medium_our_team_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/our_team_1280w.jpg"
+            alt="Toro Taco Team cooking on the grill"
+          >
+      </div>
+      <h2>Our Team</h2>
+      <p>
+        Toro Taco is proud to be a living wage employer. We think that our team will be more focused, attentive, and caring if they don't have to worry about making ends meet outside of the "office". We have a relatively small crew but, we are a passionate bunch. On a daily basis you will likely see our two owners, head chef, sus chef, and wait-staff working hard to bring you the best tacos around!
+      </p>
+    </section>
+
+    <section class="our-team">
+      <div>
+        <img srcset="images/xs_our_story_320w.jpg 320w,
+             images/small_our_story_640w.jpg 640w,
+             images/medium_our_story_960w.jpg 960w"
+            sizes="(max-width: 476px) 320px,
+                   (max-width: 768px) 640px,
+                   (max-width: 992px) 960px,
+                   1280px"
+            src="images/our_story_1280w.jpg"
+            alt="Person reading a book at a table"
+          >
+      </div>
+      <h2>Our Story</h2>
+      <p>
+        Toro Taco opened in 2020 when we saw the need to bring authentic Mexican cuisine to the Triangle in a sit-down restaurant environment. We wanted to offer the freshest ingredients with recipes that have been passed down from our families for generations. We are located in a historic warehouse building in downtown Durham, North Carolina and are open 7 days a week.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/component1.jpg" alt="Toro Taco">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" title="Toro Taco - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" title="Toro Taco - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" title="Toro Taco - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div> 
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>
